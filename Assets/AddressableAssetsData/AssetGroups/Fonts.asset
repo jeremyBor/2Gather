@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Fonts
+  m_EditorClassIdentifier: 
+  m_GroupName: Fonts
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 43180b1cf89c7f84b8c5238a9c92255d
+  m_SerializeEntries:
+  - m_GUID: 62754d8de70763d4fa496a39eaff9657
+    m_Address: Font Linker
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 69ae6eb5070b3cc4889a287290b05019
+    m_Address: LiberationSans SDF Fr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f586378b4e144a9851e7b34d9b748ee
+    m_Address: LiberationSans SDF Gen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e9c694f7402f28a499099fda7e21dce6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4662dd840c8977846a114a97ba6e2883, type: 2}
+    - {fileID: 11400000, guid: 95d6810796e0b7746b600bb2c4cd9783, type: 2}
