@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allFonts:
     basesFontsRef:
-    - m_AssetGUID: 
+    - m_AssetGUID: 8f586378b4e144a9851e7b34d9b748ee
     languagueFonts:
     - usedInLanguages:
       - French
       replaceFontRef:
-      - m_AssetGUID: 
+      - m_AssetGUID: 69ae6eb5070b3cc4889a287290b05019
