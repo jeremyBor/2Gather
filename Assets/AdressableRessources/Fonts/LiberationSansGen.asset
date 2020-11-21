@@ -69,14 +69,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: LiberationSans SDF Fr
+  m_Name: LiberationSansGen
   m_EditorClassIdentifier: 
   hashCode: 231247347
   material: {fileID: 2180264}
   materialHashCode: -1183942120
   m_Version: 1.1.0
-  m_SourceFontFileGUID: 4e446e1f8033a9b4d8a6d54e5fe36873
-  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 4e446e1f8033a9b4d8a6d54e5fe36873,
+  m_SourceFontFileGUID: e3265ab4bf004d28a9537516768c1c75
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75,
     type: 3}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
@@ -7712,8 +7712,7 @@ MonoBehaviour:
           m_YAdvance: 0
       m_FeatureLookupFlags: 0
   fallbackFontAssets: []
-  m_FallbackFontAssetTable:
-  - {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_FallbackFontAssetTable: []
   m_CreationSettings:
     sourceFontFileName: 
     sourceFontFileGUID: e3265ab4bf004d28a9537516768c1c75

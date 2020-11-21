@@ -22,11 +22,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 69ae6eb5070b3cc4889a287290b05019
-    m_Address: LiberationSans SDF Fr
+    m_Address: LiberationSansFr
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 8f586378b4e144a9851e7b34d9b748ee
-    m_Address: LiberationSans SDF Gen
+    m_Address: LiberationSansGen
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
