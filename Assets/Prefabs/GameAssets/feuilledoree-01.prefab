@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3586974143583596509}
   m_Layer: 8
   m_Name: feuilledoree-01
-  m_TagString: Untagged
+  m_TagString: BonusObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
