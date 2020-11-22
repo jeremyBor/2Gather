@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 7.5
-  _jumpForce: 800
+  _jumpForce: 900
   _movementSmoothing: 0.05
   _airControl: 1
   _whatIsGround:
