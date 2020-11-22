@@ -54,7 +54,7 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
-		if (_grounded && _isJumpPressed)
+		if (_grounded && _isJumpPressed && _rigidbody2D.velocity.y <=0.5f)
 		{
 			_isJumpPressed = false;
 			_grounded = false;
@@ -87,6 +87,9 @@ public class CharacterController2D : MonoBehaviour
 
 	public void OnJump (InputAction.CallbackContext a_context)
 	{
-		_isJumpPressed = true;
+		if (a_context.ReadValue<float>() >=1)
+		{
+			_isJumpPressed = true;
+		}
 	}
 }

@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using Base.Tools;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : MonoBehaviourSingleton<LevelManager>
 {
     [SerializeField]
     private string[] _levels;

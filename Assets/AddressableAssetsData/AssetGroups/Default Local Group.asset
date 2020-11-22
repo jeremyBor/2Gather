@@ -16,7 +16,71 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: cb31970395ae3fe4284707a9c06c6ff5
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0be6e84614177fc44b911720af802609
+    m_Address: Assets/AdressableRessources/Sprites/seaudeau-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0f0aa1d20d9e6e64a8dee63789cc2d80
+    m_Address: Assets/AdressableRessources/Sprites/plantecarnivore-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26fe72b57f36bc548b7108ea2b2f8e6f
+    m_Address: Assets/AdressableRessources/Sprites/PLATEFORME8.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3033963040d1d854fa84260d183ff9a1
+    m_Address: Assets/AdressableRessources/Sprites/grotteCFgauche-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3349cb4583520254e97f0133a1faea31
+    m_Address: Assets/AdressableRessources/Sprites/feu-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4356accb0ee17564fbdb23c4a188d168
+    m_Address: Assets/AdressableRessources/Sprites/feuilledoree-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50933d6792bf7bf48acd7f72104dee4c
+    m_Address: Assets/AdressableRessources/Sprites/buissonepine-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 592062c0d8e49394a8211cdbb9ab9102
+    m_Address: Assets/AdressableRessources/Sprites/PLATEFORME7.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 67b7d55a894ed8a4ca61894b26f7ff45
+    m_Address: Assets/AdressableRessources/Sprites/towgather-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 82dbfac19bd9a1e48aeb5a4b77e999b7
+    m_Address: Assets/AdressableRessources/Sprites/platCFsimple-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9aab884d0f306374ba65bf11bc428e18
+    m_Address: Assets/AdressableRessources/Sprites/montagne-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f80fe0223990c844970d908f8f028ef
+    m_Address: Assets/AdressableRessources/Sprites/nuageaie-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a9ea91c25bfa308469e74f61e8c7e661
+    m_Address: Assets/AdressableRessources/Sprites/platCCsimple-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: adb2b0938efd4724392ae3637eab15f9
+    m_Address: Assets/AdressableRessources/Sprites/grotteCCgauche-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d388ccf1545940c4bab1fc54a8fd7ab2
+    m_Address: Assets/AdressableRessources/Sprites/stalagtites-01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e31c68099a0b4b6449b926275c2c1ad8
+    m_Address: Assets/AdressableRessources/Sprites/nuage.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e9c694f7402f28a499099fda7e21dce6, type: 2}
   m_SchemaSet:
