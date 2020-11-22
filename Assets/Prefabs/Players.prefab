@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5752201307899770255}
   - component: {fileID: 9186360329985077931}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: nuageaie-01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,8 +252,8 @@ MonoBehaviour:
     m_Bits: 1025
   _groundCheck: {fileID: 8964666116808086973}
   _rigidbody2D: {fileID: 6522634917505885656}
-  _damagedSprite: {fileID: 4629217432012216627}
-  _normalSprite: {fileID: 2537114299670483715}
+  _damagedSprite: {fileID: 2537114299670483715}
+  _normalSprite: {fileID: 4629217432012216627}
 --- !u!114 &6522634917505885661
 MonoBehaviour:
   m_ObjectHideFlags: 0

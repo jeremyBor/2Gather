@@ -98,14 +98,15 @@ public class CharacterController2D : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.tag == "DamageObject")
+		
+		if (collision.tag == "DamageObjet")
 		{
 			Level.Instance.heats--;
 			if(Level.Instance.heats < 0)
 			{
 				Level.Instance.heats = 0;
 			}
-
+			Debug.Log(collision.tag);
 			_damagedSprite.SetActive(true);
 			_normalSprite.SetActive(false);
 		}
@@ -118,7 +119,11 @@ public class CharacterController2D : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		_damagedSprite.SetActive(false);
-		_normalSprite.SetActive(true);
+		Debug.Log(collision.tag);
+		if (collision.tag == "DamageObjet")
+		{
+			_damagedSprite.SetActive(false);
+			_normalSprite.SetActive(true);
+		}
 	}
 }
