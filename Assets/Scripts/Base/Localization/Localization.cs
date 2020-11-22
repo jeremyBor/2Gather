@@ -47,7 +47,7 @@ namespace Base.Loacalization
 
         private List<string> _languages;
 
-        private string _defaultLanguage = "English";
+        private string _defaultLanguage = "French";
 
         private string _currentLanguage;
         private FontLinker _fontLinker = null;

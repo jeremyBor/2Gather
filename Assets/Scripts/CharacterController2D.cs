@@ -23,7 +23,7 @@ public class CharacterController2D : MonoBehaviour
 	private float _moveDirection = 0;
 	private bool _isJumpPressed = false;
 
-	private void FixedUpdate()
+	public void DoFixedUpdate()
 	{
 		bool wasGrounded = _grounded;
 		_grounded = false;

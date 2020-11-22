@@ -10,7 +10,6 @@ namespace Base.StateManagement
         public const int Menu = 101;
         [GameStateId(stateName = "Game")]
         public const int Game = 102;
-        [GameStateId(stateName = "Pause")]
-        public const int Pause = 103;
+
     }
 }

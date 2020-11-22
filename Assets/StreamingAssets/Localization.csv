@@ -1,0 +1,61 @@
+Keys,French
+MENU_BOX,MENU
+MENU_BOUTON_START,JOUER
+MENU_BOUTON_EXIT,SORTIR
+DIALOGUE_NUAGE_DEBUT_1,Euh...Il y a quelqu'un ? 
+DIALOGUE_MONTAGNE_DEBUT_2,"Je suis là ! C’est sympa par ici... Tu arrives bientôt ? On doit y être rapidement, on est déjà en retard…"
+DIALOGUE_NUAGE_DEBUT_3,"Oh non, c’est bien ce que je me disais. On est encore bloqués dans deux saisons différentes... On n'arrivera jamais à temps pour faire le mois de Septembre ! Sauf si..."
+DIALOGUE_MONTAGNE_DEBUT_4,"Attends. Tu es en hiver, moi en été… On va bien finir par se rencontrer à un moment ou à un autre ! Nos deux terrains doivent beaucoup se ressembler. Suis-moi, je vais te guider ! On va avancer ensemble le plus vite possible. D'accord? Suis-moi ! "
+WINDOW_NOTICE_{0},Un coup de main? 
+WINDOW_NOTICE_RULES,"Pour te déplacer, rien de plus simple : ← reculer , → avancer, ⎵ sauter"
+WINDOW_NOTICE_CONTENT_1,"Objectif : Je vois que vous êtes déjà en retard ! Il va falloir vous dépêcher… Automne vous a donné rendez-vous dans 5 minutes, ne perdez pas de temps ! Incarnez Montagne, et guidez Nuage le plus vite possible dans son univers en anticipant les obstacles auxquels il pourrait faire face ! Bonne chance ;)"
+WINDOW_NOTICE_CONTENT_2,Les différents éléments du jeu : Feuilles : Collecte-les pour gagner des points // Seau d’eau : Récupère-le pour éteindre les différents obstacles de feu dans le monde de Nuage.
+NIVEAU_{0},Niveau {0} réussi ! 
+NIVEAU_BOUTON_TEXT_1,Rejouer ce niveau
+NIVEAU_BOUTON_TEXT_2,Continuer
+DIALOGUE_NUAGE_MILIEU_1,"Et… sinon, t’as quel âge toi ?"
+DIALOGUE_MONTAGNE_MILIEU_2,"Oh, tu ne veux pas savoir mon petit bonhomme. Et moi non plus d’ailleurs ! J’ai décidé d’arrêter d’en faire toute une montagne le jour où j’ai dépassé les 100 ans. Et crois-moi, c’était il y a trèèès longtemps ! Et toi ?"
+DIALOGUE_NUAGE_MILIEU_3,"La chance… Moi ça fait quelques jours seulement, mais j’ai l’impression que je n’aurais pas ta chance. Pourtant j’ai envie de découvrir le monde, mais parfois… j’ai l’impression que je risque à tout moment de disparaître. De m'évaporer."
+DIALOGUE_MONTAGNE_MILIEU_4,"Tu sais, arfois, il vaut mieux être éphémère plutôt qu’éternel! Je te montrerai les beautés du monde lorsqu'on arrivera à destination. Dépechons-nous!"
+DIALOGUE_NUAGE_FINAL_1,On arrive bientôt ?
+DIALOGUE_MONTAGNE_FINAL_2,"Oui, regarde ! Je crois qu’on y est."
+DIALOGUE_NUAGE_FINAL_3,"J’ai un peu le trac je crois, pour le mois de Septembre... Tu pourras m'aider si je ne sais pas quoi faire?"
+DIALOGUE_MONTAGNE_FINAL_4,"Ne t'en fais pas, je serai là."
+FINAL_SCENE_QUOTE,« L’automne est une demeure d’or et de pluie. »
+DIALOGUE_NUAGE_HURT_1,Laisse-moi deviner… Tu as oublié tes lunettes chez toi ce matin ?
+DIALOGUE_NUAGE_HURT_2,Aow…
+DIALOGUE_NUAGE_HURT_3,Aouch !
+DIALOGUE_NUAGE_LEVER_1,"Ah, génial !"
+DIALOGUE_NUAGE_LEVER_2,Merci !
+DIALOGUE_NUAGE_LEVER_3,Et un de moins !
+GAIN_POINTS_OBJECT,100pts
+GAIN_POINTS_LEVER_ACTIVATED,300pts
+LOSS_POINTS_HURT,-300pts
+,
+Textes supprimés,
+DIALOGUE_NUAGE_7,Quoi ?
+DIALOGUE_MONTAGNE_8,Tu te souviens des consignes données par l’Automne ?
+DIALOGUE_NUAGE_9,Euh… Les quoi ?
+DIALOGUE_MONTAGNE_10,"Hm. C’est bien ce que je me disais. On a un petit problème, Houston : on doit se retrouver le plus rapidement possible, pour faire la scène qu’elle prépare tous les ans. Tu sais ? « Septembre » ! Double problème : on est tous les deux bloqués dans deux saisons différentes…"
+DIALOGUE_NUAGE_11,"… Rien compris. Tu sais, moi pour l’instant je suis juste stagiaire Cumulus, donc…"
+DIALOGUE_MONTAGNE_12,"C’est pas grave, c’est très bien ! On va se dépêcher d’arriver jusqu’à Septembre. Tu es en hiver, moi en été… On va bien finir par se rencontrer à un moment ou à un autre ! Nos deux terrains doivent beaucoup se ressembler. Suis-moi, je vais te guider ! On va avancer ensemble le plus vite possible. D’accord Comulu…Culum…Cumulo… Hem. Bon. Compris ?"
+DIALOGUE_NUAGE_13,"Oui oui, reçu 5 sur 5 ! Je fais souvent ça avec mon frère, je l’imite, et en général il finit par mettre un doigt dans son nez, et…"
+DIALOGUE_MONTAGNE_14,"Eeeeet… Stop. Je ne veux pas en savoir plus ! En route, on n’a pas de temps à perdre !"
+DIALOGUE_NUAGE_18,"Tu pourras m’aider, si j’oublie mon texte ?"
+DIALOGUE_MONTAGNE_19,Ne t’en fais pas mon bonhomme. Je suis une montagne : je te soufflerai les paroles.
+OPTIONAL_LEVEL3_DIALOGUE_NUAGE_1,"Et… sinon, t’as quel âge toi ?"
+OPTIONAL_LEVEL3_DIALOGUE_MONTAGNE_2,"Oh, tu ne veux pas savoir mon petit bonhomme. Et moi non plus d’ailleurs ! J’ai décidé d’arrêter d’en faire toute une montagne le jour où j’ai dépassé les 100 ans. Et crois-moi, c’était il y a trèèès longtemps ! Et toi ?"
+OPTIONAL_LEVEL3_DIALOGUE_NUAGE_3,"La chance… Moi ça fait quelques jours seulement, mais j’ai l’impression que je n’aurais pas ta chance. Pourtant j’ai envie de découvrir le monde, mais parfois… j’ai l’impression que je risque à tout moment de disparaître. De m'évaporer."
+OPTIONAL_LEVEL4_DIALOGUE_NUAGE_1,Tu voulais me dire quelque chose?
+OPTIONAL_LEVEL4_DIALOGUE_MONTAGNE_2,"Non, je rêvassais… Je me dis que parfois, il vaut mieux pouvoir s’évaporer. Être éphémère plutôt qu’éternel."
+OPTIONAL_LEVEL4_DIALOGUE_NUAGE_3,C’est quoi éphémère ?
+OPTIONAL_LEVEL4_DIALOGUE_MONTAGNE_4,"C’est quand les choses sont là pour un temps seulement. Juste là pour ce qu’il faut. Les papillons, par exemple, sont éphémères !"
+OPTIONAL_LEVEL4_DIALOGUE_NUAGE_5,"Tu préfèrerais être éphémère, toi ?"
+OPTIONAL_LEVEL4_DIALOGUE_MONTAGNE_6,"Oh… Je suis toujours admirative des éléments que je contemple chaque jour. Quand je vois ces aurores boréales qui dansent au-dessus de moi, les typhons qui me font chavirer sans jamais me déstabiliser, le vent qui me caresse et porte les pollens jusqu’à des terres fertiles, le soleil et la lune qui jouent à chat, c’est si doux tout cela… Mais le monde n’est pas fait que de merveilles. J’aurais aimé ne pas assister à certains spectacles."
+OPTIONAL_LEVEL5_DIALOGUE_NUAGE_1,J’aimerais bien voir tout ce que tu as vu. Mais je suis trop petit je crois…
+OPTIONAL_LEVEL5_DIALOGUE_MONTAGNE_2,"Tu sais, si tu te débrouilles bien pendant la pièce de théâtre, tu pourrais être promu au rang de « Nuage orographique ». Je connais bien Automne, je pourrais le lui demander."
+OPTIONAL_LEVEL5_DIALOGUE_NUAGE_3,Orogra…quoi ?
+OPTIONAL_LEVEL5_DIALOGUE_MONTAGNE_4,"Un nuage orographique. Ce sont les nuages qui sont juste en-dessous de ma tête ! Comme ça, tu verrais d’un peu plus haut, et je pourrais te montrer ce dont je te parlais tout à l’heure. Ca te plairait ?"
+OPTIONAL_LEVEL5_DIALOGUE_NUAGE_5,"Oui, je crois oui."
+OPTIONAL_LEVEL5_DIALOGUE_MONTAGNE_6,"Tu crois, seulement ?"
+OPTIONAL_LEVEL5_DIALOGUE_NUAGE_7,Je crois. Mais je ne serais sûr que lorsqu’on me dira que c’est à côté de toi que je peux graviter. Peut-être que j’aurais moins peur de m’évaporer si tu es là pour me montrer toutes les beautés du monde avant.

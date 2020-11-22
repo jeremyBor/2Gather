@@ -348,6 +348,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 897a7b22ac5aa594cabc0b09440951bb, type: 3}
+--- !u!1 &232095189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2195147850027875927, guid: 897a7b22ac5aa594cabc0b09440951bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 232095188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &369775996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -782,6 +788,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5070875385296618584, guid: 33e1a89d08e887e44aec356ad11a175b,
+        type: 3}
+      propertyPath: objectsToDisable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070875385296618584, guid: 33e1a89d08e887e44aec356ad11a175b,
+        type: 3}
+      propertyPath: objectsToDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 232095189}
     - target: {fileID: 6716471718589614823, guid: 33e1a89d08e887e44aec356ad11a175b,
         type: 3}
       propertyPath: m_Name
@@ -1302,12 +1318,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelStart: {fileID: 867047064}
+  levelId: 1
   _playerPrefab: {fileID: 6522634917505885658, guid: af6e38a0834c0ba49b7e5bee6cafa183,
     type: 3}
   objectsToReset: []
   heats: 4
   time: 90
   CollectedLeafs: 0
+  timeRemining: 0
 --- !u!65 &2088728360
 BoxCollider:
   m_ObjectHideFlags: 0
