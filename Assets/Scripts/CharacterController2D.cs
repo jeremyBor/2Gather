@@ -12,6 +12,9 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private Transform _groundCheck;
 	[SerializeField] private Rigidbody2D _rigidbody2D;
 
+	[SerializeField] private GameObject _damagedSprite = null;
+	[SerializeField] private GameObject _normalSprite = null;
+
 	const float _groundedRadius = .01f;
 	private bool _grounded;
 	private bool _facingRight = true;
@@ -102,11 +105,20 @@ public class CharacterController2D : MonoBehaviour
 			{
 				Level.Instance.heats = 0;
 			}
+
+			_damagedSprite.SetActive(true);
+			_normalSprite.SetActive(false);
 		}
 		else if (collision.tag == "BonusObject")
 		{
 			Level.Instance.CollectedLeafs++;
 			collision.gameObject.SetActive(false);
 		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		_damagedSprite.SetActive(false);
+		_normalSprite.SetActive(true);
 	}
 }
