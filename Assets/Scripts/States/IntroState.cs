@@ -1,4 +1,5 @@
 ﻿using Base.StateManagement;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -6,11 +7,13 @@ using UnityEngine.AddressableAssets;
 [CreateAssetMenu(fileName = "IntroState.asset", menuName = "GameStates/States/IntroState", order = 1)]
 public class IntroState : AGameState
 {
+    public List<string> introKeys;
     public override void OnEnterTop(IState a_previousState)
     {
         base.OnEnterTop(a_previousState);
 
-        UIManager.Instance.ShowPanel<WinPanel>();
+        WinPanel wp = UIManager.Instance.ShowPanel<WinPanel>();
+        wp.SetDialoges(introKeys);
         RegisterForEvent();
     }
 
@@ -34,6 +37,6 @@ public class IntroState : AGameState
     private void OnStartButtonPressed(ButtonEvent a_buttonEvent)
     {
         if (a_buttonEvent.ButtonDown)
-            PushGameState(GameSpecificGameStateIdConsts.Score);
+            PushGameState(GenericGameStateConsts.Game);
     }
 }

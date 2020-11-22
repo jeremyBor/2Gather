@@ -10,5 +10,5 @@ public static class GameSpecificGameStateIdConsts
     [GameStateId(stateName = "Score")]
     public const int Score = 2;
     [GameStateId(stateName = "Intro")]
-    public const int Intro = 2;
+    public const int Intro = 3;
 }

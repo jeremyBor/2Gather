@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameStates:
   - Key: 1
-    Value: {fileID: 11400000, guid: 285ef10fbdef1e940b3221554de72a6f, type: 2}
+    Value: {fileID: 11400000, guid: acae8eec2d1d4cc47aae5b5ee0f78700, type: 2}
   - Key: 2
     Value: {fileID: 11400000, guid: 382e4d05800c6e94b8515512d71a309b, type: 2}
+  - Key: 3
+    Value: {fileID: 11400000, guid: 5c21a013afb96d84b9b87012e54bae51, type: 2}
   - Key: 101
-    Value: {fileID: 11400000, guid: 625920682b2d63d4c8ce885a1d806fe6, type: 2}
+    Value: {fileID: 11400000, guid: 02a3e1c740214f341b59c963ed4aca40, type: 2}
   - Key: 102
     Value: {fileID: 11400000, guid: 625920682b2d63d4c8ce885a1d806fe6, type: 2}
   _startStateId:

@@ -470,7 +470,7 @@ MonoBehaviour:
   - {fileID: 5365577100499797658, guid: 3e1ba22fa0d519743bc0d407f658340f, type: 3}
   - {fileID: 7042418810517700793, guid: bd9bb8f363d831948a763a01ef1d06ec, type: 3}
   - {fileID: 9215435153635972378, guid: 19039ff218085614ba55e83ad88a5f62, type: 3}
-  - {fileID: 3766222681830927288, guid: e4257cb2b68018c44a11a9e7426d5548, type: 3}
+  - {fileID: 7856718037289297904, guid: 6b0c467d1c1af844aaaed1762490c58b, type: 3}
   defaultLayout: {fileID: 774565833}
 --- !u!4 &863243243
 Transform:

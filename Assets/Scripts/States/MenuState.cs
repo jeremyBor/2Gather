@@ -35,6 +35,6 @@ public class MenuState : AGameState
     private void OnStartButtonPressed(ButtonEvent a_buttonEvent)
     {
         if(a_buttonEvent.ButtonDown)
-        PushGameState(GenericGameStateConsts.Game);
+        PushGameState(GameSpecificGameStateIdConsts.Intro);
     }
 }
