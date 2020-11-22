@@ -92,4 +92,21 @@ public class CharacterController2D : MonoBehaviour
 			_isJumpPressed = true;
 		}
 	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.tag == "DamageObject")
+		{
+			Level.Instance.heats--;
+			if(Level.Instance.heats < 0)
+			{
+				Level.Instance.heats = 0;
+			}
+		}
+		else if (collision.tag == "BonusObject")
+		{
+			Level.Instance.CollectedLeafs++;
+			collision.gameObject.SetActive(false);
+		}
+	}
 }
