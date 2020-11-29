@@ -3,16 +3,20 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using Hellmade.Sound;
 
 [CreateAssetMenu(fileName = "MenuState.asset", menuName = "GameStates/States/MenuState", order = 1)]
 public class MenuState : AGameState
 {
+    public AudioClip menuMusic = null;
     public override void OnEnterTop(IState a_previousState)
     {
         base.OnEnterTop(a_previousState);
 
         UIManager.Instance.ShowPanel<MainMenuPanel>();
         RegisterForEvent();
+
+        EazySoundManager.PlayMusic(menuMusic, 1f, true, false);
     }
 
     public override void OnExitTop(IState a_nextState)

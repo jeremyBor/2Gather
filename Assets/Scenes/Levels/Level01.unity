@@ -580,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 6727592446168184795, guid: a952a91c4b288334ea5a7f819db31297,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6727592446168184795, guid: a952a91c4b288334ea5a7f819db31297,
         type: 3}
@@ -1234,7 +1234,7 @@ PrefabInstance:
     - target: {fileID: 6727592446168184795, guid: a952a91c4b288334ea5a7f819db31297,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6727592446168184795, guid: a952a91c4b288334ea5a7f819db31297,
         type: 3}
@@ -1456,7 +1456,14 @@ MonoBehaviour:
   levelId: 1
   _playerPrefab: {fileID: 6522634917505885658, guid: af6e38a0834c0ba49b7e5bee6cafa183,
     type: 3}
+  _playerInstance: {fileID: 0}
+  levelEnd: {fileID: 1069851162871961212}
   objectsToReset: []
+  _keys:
+  - DIALOGUE_NUAGE_MILIEU_1
+  - DIALOGUE_MONTAGNE_MILIEU_2
+  - DIALOGUE_NUAGE_MILIEU_3
+  - DIALOGUE_MONTAGNE_MILIEU_4
   heats: 4
   time: 90
   CollectedLeafs: 0
@@ -1531,6 +1538,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc527c25e4b396945bd9f47ebd218db7, type: 3}
+--- !u!114 &1069851162871961212 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6464406002320929414, guid: bc527c25e4b396945bd9f47ebd218db7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069851162871961211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bf206bcc236cb45ada110b5d3469a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3349033500706060390
 PrefabInstance:
   m_ObjectHideFlags: 0

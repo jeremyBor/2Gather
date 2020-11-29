@@ -3,36 +3,34 @@ MENU_BOX,MENU
 MENU_BOUTON_START,JOUER
 MENU_BOUTON_EXIT,SORTIR
 DIALOGUE_NUAGE_DEBUT_1,Euh...Il y a quelqu'un ?
-DIALOGUE_MONTAGNE_DEBUT_2,Je suis là ! C’est sympa par ici... Tu arrives bientôt ? On doit y être rapidement, on est déjà en retard…
-DIALOGUE_NUAGE_DEBUT_3,Oh non c’est bien ce que je me disais. On est encore bloqués dans deux saisons différentes... On n'arrivera jamais à temps pour faire le mois de Septembre ! Sauf si...
-DIALOGUE_MONTAGNE_DEBUT_4,Attends. Tu es en hiver moi en été… On va bien finir par se rencontrer à un moment ou à un autre ! Nos deux terrains doivent beaucoup se ressembler. Suis-moi je vais te guider ! On va avancer ensemble le plus vite possible. D'accord? Suis-moi !
+DIALOGUE_MONTAGNE_DEBUT_2,"Je suis là ! C’est sympa par ici... Tu arrives bientôt ? On doit y être rapidement, on est déjà en retard…"
+DIALOGUE_NUAGE_DEBUT_3,"Oh non, c’est bien ce que je me disais. On est encore bloqués dans deux saisons différentes... On n'arrivera jamais à temps pour faire le mois de Septembre ! Sauf si..."
+DIALOGUE_MONTAGNE_DEBUT_4,"Attends. Tu es en hiver, moi en été… On va bien finir par se rencontrer à un moment ou à un autre ! Nos deux terrains doivent beaucoup se ressembler. Suis-moi, je vais te guider ! On va avancer ensemble le plus vite possible. D'accord? Suis-moi ! "
 WINDOW_NOTICE_{0},Un coup de main? 
-WINDOW_NOTICE_RULES,Pour te déplacer, rien de plus simple : ← reculer , → avancer, ⎵ sauter
-WINDOW_NOTICE_CONTENT_1,Objectif : Je vois que vous êtes déjà en retard ! Il va falloir vous dépêcher… Automne vous a donné rendez-vous dans 5 minutes ne perdez pas de temps ! Incarnez Montagne et guidez Nuage le plus vite possible dans son univers en anticipant les obstacles auxquels il pourrait faire face ! Bonne chance ;)
+WINDOW_NOTICE_RULES,"Pour te déplacer, rien de plus simple : ← reculer , → avancer, ⎵ sauter"
+WINDOW_NOTICE_CONTENT_1,"Objectif : Je vois que vous êtes déjà en retard ! Il va falloir vous dépêcher… Automne vous a donné rendez-vous dans 5 minutes, ne perdez pas de temps ! Incarnez Montagne, et guidez Nuage le plus vite possible dans son univers en anticipant les obstacles auxquels il pourrait faire face ! Bonne chance ;)"
 WINDOW_NOTICE_CONTENT_2,Les différents éléments du jeu : Feuilles : Collecte-les pour gagner des points // Seau d’eau : Récupère-le pour éteindre les différents obstacles de feu dans le monde de Nuage.
-NIVEAU_{0},Niveau {0} réussi !
+NIVEAU_{0},Niveau {0} réussi ! 
 NIVEAU_BOUTON_TEXT_1,Rejouer ce niveau
 NIVEAU_BOUTON_TEXT_2,Continuer
-DIALOGUE_NUAGE_MILIEU_1,Et… sinon t’as quel âge toi ?
-DIALOGUE_MONTAGNE_MILIEU_2,Oh tu ne veux pas savoir mon petit bonhomme. Et moi non plus d’ailleurs ! J’ai décidé d’arrêter d’en faire toute une montagne le jour où j’ai dépassé les 100 ans. Et crois-moi c’était il y a trèèès longtemps ! Et toi ?
-DIALOGUE_NUAGE_MILIEU_3,La chance… Moi ça fait quelques jours seulement mais j’ai l’impression que je n’aurais pas ta chance. Pourtant j’ai envie de découvrir le monde mais parfois… j’ai l’impression que je risque à tout moment de disparaître. De m'évaporer.
-DIALOGUE_MONTAGNE_MILIEU_4,Tu sais parfois il vaut mieux être éphémère plutôt qu’éternel! Je te montrerai les beautés du monde lorsqu'on arrivera à destination. Dépechons-nous!"
+DIALOGUE_NUAGE_MILIEU_1,"Et… sinon, t’as quel âge toi ?"
+DIALOGUE_MONTAGNE_MILIEU_2,"Oh, tu ne veux pas savoir mon petit bonhomme. Et moi non plus d’ailleurs ! J’ai décidé d’arrêter d’en faire toute une montagne le jour où j’ai dépassé les 100 ans. Et crois-moi, c’était il y a trèèès longtemps ! Et toi ?"
+DIALOGUE_NUAGE_MILIEU_3,"La chance… Moi ça fait quelques jours seulement, mais j’ai l’impression que je n’aurais pas ta chance. Pourtant j’ai envie de découvrir le monde, mais parfois… j’ai l’impression que je risque à tout moment de disparaître. De m'évaporer."
+DIALOGUE_MONTAGNE_MILIEU_4,"Tu sais, arfois, il vaut mieux être éphémère plutôt qu’éternel! Je te montrerai les beautés du monde lorsqu'on arrivera à destination. Dépechons-nous!"
 DIALOGUE_NUAGE_FINAL_1,On arrive bientôt ?
-DIALOGUE_MONTAGNE_FINAL_2,Oui regarde ! Je crois qu’on y est."
-DIALOGUE_NUAGE_FINAL_3,J’ai un peu le trac je crois, pour le mois de Septembre... Tu pourras m'aider si je ne sais pas quoi faire?"
-DIALOGUE_MONTAGNE_FINAL_4,Ne t'en fais pas, je serai là."
-FINAL_SCENE_QUOTE,L’automne est une demeure d’or et de pluie.
+DIALOGUE_MONTAGNE_FINAL_2,"Oui, regarde ! Je crois qu’on y est."
+DIALOGUE_NUAGE_FINAL_3,"J’ai un peu le trac je crois, pour le mois de Septembre... Tu pourras m'aider si je ne sais pas quoi faire?"
+DIALOGUE_MONTAGNE_FINAL_4,"Ne t'en fais pas, je serai là."
+FINAL_SCENE_QUOTE,« L’automne est une demeure d’or et de pluie. »
 DIALOGUE_NUAGE_HURT_1,Laisse-moi deviner… Tu as oublié tes lunettes chez toi ce matin ?
 DIALOGUE_NUAGE_HURT_2,Aow…
 DIALOGUE_NUAGE_HURT_3,Aouch !
-DIALOGUE_NUAGE_LEVER_1,"Ah, génial !
+DIALOGUE_NUAGE_LEVER_1,"Ah, génial !"
 DIALOGUE_NUAGE_LEVER_2,Merci !
 DIALOGUE_NUAGE_LEVER_3,Et un de moins !
 GAIN_POINTS_OBJECT,100pts
 GAIN_POINTS_LEVER_ACTIVATED,300pts
 LOSS_POINTS_HURT,-300pts
-,
-Textes supprimés,
 DIALOGUE_NUAGE_7,Quoi ?
 DIALOGUE_MONTAGNE_8,Tu te souviens des consignes données par l’Automne ?
 DIALOGUE_NUAGE_9,Euh… Les quoi ?

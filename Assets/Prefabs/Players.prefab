@@ -254,6 +254,10 @@ MonoBehaviour:
   _rigidbody2D: {fileID: 6522634917505885656}
   _damagedSprite: {fileID: 2537114299670483715}
   _normalSprite: {fileID: 4629217432012216627}
+  runSound: {fileID: 8300000, guid: f90111b6a9c954041b4ee7f63a8159d4, type: 3}
+  jumpSound: {fileID: 8300000, guid: 5042a9bc6defd094c919f8f5db82315a, type: 3}
+  damageSound: {fileID: 8300000, guid: 3bde7052f2e6f274da86effae3463b08, type: 3}
+  colectSound: {fileID: 8300000, guid: a248839d2915dbf48a822a721822da45, type: 3}
 --- !u!114 &6522634917505885661
 MonoBehaviour:
   m_ObjectHideFlags: 0

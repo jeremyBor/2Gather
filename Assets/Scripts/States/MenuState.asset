@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1847d27ad9c841f49b6a4fbb50b13e33, type: 3}
   m_Name: MenuState
   m_EditorClassIdentifier: 
+  menuMusic: {fileID: 8300000, guid: fc0e64f013fc5b446b052a81d91e7c75, type: 3}

@@ -13,18 +13,26 @@ public class TransitionPanel : UIPanel
         //Level.Instance.heats;
         for(int i = 0; i< leafs.Length; ++i)
         {
-            leafs[i].SetActive(Level.Instance.CollectedLeafs > i);
+            leafs[i].SetActive(LevelManager.Instance._currentLevel.CollectedLeafs > i);
         }
         for (int i = 0; i < hearts.Length; ++i)
         {
-            leafs[i].SetActive(Level.Instance.heats > i);
+            hearts[i].SetActive(LevelManager.Instance._currentLevel.heats > i);
         }
 
-        float finishTime = Level.Instance.time;
-        finishTime -= Level.Instance.timeWin;
+        float finishTime = LevelManager.Instance._currentLevel.time;
+        finishTime -= LevelManager.Instance._currentLevel.timeWin;
+
         for (int i = 0; i < time.Length; ++i)
         {
-            time[i].SetActive((int)Mathf.Lerp(0, 4, finishTime / (Level.Instance.timeLose - Level.Instance.timeWin)) > i);
+            if (LevelManager.Instance._currentLevel.time < LevelManager.Instance._currentLevel.timeLose)
+            {
+                time[i].SetActive(Mathf.CeilToInt(Mathf.Lerp(0, 3, finishTime / (LevelManager.Instance._currentLevel.timeLose - LevelManager.Instance._currentLevel.timeWin))) <= i);
+            }
+            else
+            {
+                time[i].SetActive(false);
+            }
         }
             
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using System.Text;
 
 namespace Base.Loacalization
 {
@@ -281,30 +282,112 @@ namespace Base.Loacalization
             nextAction?.Invoke();
         }
 
-        private void FillLocalisationDic(string fileText)
+        private void FillLocalisationDic(string a_fileText)
         {
-            fileText = fileText.Replace("\r", "").Replace("[", "").Replace("]", "");
+            int currentFileIndex = 0;
+            List<string> currentLine = new List<string>();
+            StringBuilder currentItem = new StringBuilder("");
+            StringBuilder curentKey = new StringBuilder("");
 
-            string[] locFile = fileText.Split('\n');
+            bool insideQuotes = false;
 
-            string firstLine = locFile[0];
-            string[] languagesValues = firstLine.Split(',');
+            bool isFirstLine = true;
 
-            for (int i = 1; i < languagesValues.Length; ++i) // ignor the first element
+            while (currentFileIndex < a_fileText.Length)
             {
-                localizeDic.Add(languagesValues[i], new Dictionary<string, string>());
-                _languages.Add(languagesValues[i]);
+                char c = a_fileText[currentFileIndex];
+
+                switch (c)
+                {
+                    case '"':
+                        if (!insideQuotes)
+                        {
+                            insideQuotes = true;
+                        }
+                        else
+                        {
+                            if (currentFileIndex == a_fileText.Length)
+                            {
+                                // end of file
+                                insideQuotes = false;
+
+                                currentLine.Add(currentItem.ToString());
+                                currentItem.Length = 0;
+                                AddLineToDic(currentLine, isFirstLine);
+                                currentLine.Clear();
+                            }
+                            else if (a_fileText[currentFileIndex +1] == '"')
+                            {
+                                // double quote, save one
+                                currentItem.Append("\"");
+                                currentFileIndex++;
+                            }
+                            else
+                            {
+                                // leaving quotes section
+                                insideQuotes = false;
+                            }
+                        }
+                        break;
+                    case '\r':
+                        //Do nothing
+                        break;
+                    case ',':
+                        if (insideQuotes)
+                        {
+                            currentItem.Append(c);
+                        }
+                        else
+                        {
+                            currentLine.Add(currentItem.ToString());
+                            currentItem.Length = 0;
+                            if (currentFileIndex == a_fileText.Length)
+                            {
+                                AddLineToDic(currentLine, isFirstLine);
+                                currentLine.Clear();
+                            }
+                        }
+                        break;
+                    case '\n':
+                        if (insideQuotes)
+                        {
+                            currentItem.Append(c);
+                        }
+                        else
+                        {
+                            // end of current item
+                            currentLine.Add(currentItem.ToString());
+                            currentItem.Length = 0;
+                            AddLineToDic(currentLine, isFirstLine);
+                            currentLine.Clear();
+                            isFirstLine = false;
+                        }
+                        break;
+                    default:
+                        // other cases, add char
+                        currentItem.Append(c);
+                        break;
+                }
+                currentFileIndex++;
             }
+        }
 
-            for (int i = 1; i < locFile.Length; ++i)
+        private void AddLineToDic(List<string> a_line, bool a_isFirstLine = false)
+        {
+            if (a_isFirstLine)
             {
-                string line = locFile[i];
-                string[] values = line.Split(',');
-
+                for (int i = 1; i < a_line.Count; ++i) // ignor the first element
+                {
+                    localizeDic.Add(a_line[i], new Dictionary<string, string>());
+                    _languages.Add(a_line[i]);
+                }
+            }
+            else
+            {
                 int j = 1;
                 foreach (Dictionary<string, string> dic in localizeDic.Values)
                 {
-                    dic.Add(values[0], values[j].Replace("\\n", "\n").Replace("{DOT}", ",").Replace("{QUOTE}", Char.ToString('"')));
+                    dic.Add(a_line[0], a_line[j]);
                     ++j;
                 }
             }

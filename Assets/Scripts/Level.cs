@@ -3,18 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviourSingleton<Level>
+public class Level : MonoBehaviour
 {
     [SerializeField]
     private Transform _levelStart;
 
     [SerializeField]
-    private int levelId = 1;
-
-    [SerializeField]
-    private CharacterController2D _playerPrefab;
-
-    public CharacterController2D _playerInstance = null;
+    public int levelId = 1;
 
     public LevelEnd levelEnd;
 
@@ -28,7 +23,14 @@ public class Level : MonoBehaviourSingleton<Level>
     public float timeLose = 15f;
     public float timeWin = 9f;
 
-    void Awake()
+    bool isSet = false;
+
+    private void Awake()
+    {
+        LevelManager.Instance.RegisterCurentLevel(this);
+    }
+
+    void Start()
     {
         ResetLv();
     }
@@ -40,13 +42,16 @@ public class Level : MonoBehaviourSingleton<Level>
 
     public void ResetLv()
     {
-        time = 0;
-        _playerInstance = Instantiate<CharacterController2D>(_playerPrefab, _levelStart.position, Quaternion.identity);
-        for(int i = 0; i < objectsToReset.Count; ++i)
+        if (!isSet)
         {
-            objectsToReset[i].SetActive(true);
+            isSet = true;
+            time = 0;
+            LevelManager.Instance._playerInstance.transform.position = _levelStart.position;
+            
+            for (int i = 0; i < objectsToReset.Count; ++i)
+            {
+                objectsToReset[i].SetActive(true);
+            }
         }
     }
-
-
 }

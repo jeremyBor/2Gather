@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using Hellmade.Sound;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class CharacterController2D : MonoBehaviour
 
 	[SerializeField] private GameObject _damagedSprite = null;
 	[SerializeField] private GameObject _normalSprite = null;
+
+	public AudioClip runSound = null;
+	public AudioClip jumpSound = null;
+	public AudioClip damageSound = null;
+	public AudioClip colectSound = null;
+
+	private int runSoundId;
 
 	const float _groundedRadius = .01f;
 	private bool _grounded;
@@ -37,28 +45,33 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		Move(_moveDirection);
+		
 	}
 
 	public void Move(float move)
 	{
 		if (_grounded || _airControl)
 		{
+			
 			Vector3 targetVelocity = new Vector2(move * _moveSpeed, _rigidbody2D.velocity.y);
+			
 			_rigidbody2D.velocity = Vector3.SmoothDamp(_rigidbody2D.velocity, targetVelocity, ref _velocity, _movementSmoothing);
+			Debug.Log(move + "   " + _facingRight);
+
 
 			if (move > 0 && !_facingRight)
 			{
 				// ... flip the player.
 				Flip();
 			}
-
-			else if (move < 0 && _facingRight)
+			if (move < 0 && _facingRight)
 			{
 				Flip();
 			}
 		}
 		if (_grounded && _isJumpPressed && _rigidbody2D.velocity.y <=0.5f)
 		{
+			EazySoundManager.PlaySound(jumpSound);
 			_isJumpPressed = false;
 			_grounded = false;
 			_rigidbody2D.AddForce(new Vector2(0f, _jumpForce));
@@ -77,19 +90,24 @@ public class CharacterController2D : MonoBehaviour
 	public void OnMove (InputAction.CallbackContext a_context)
 	{
 		_moveDirection = a_context.ReadValue<float>();
-
-		if(_moveDirection >= 0)
+		Audio a = EazySoundManager.GetSoundAudio(runSoundId);
+		if (a == null)
 		{
-			_facingRight = true;
+			runSoundId = EazySoundManager.PrepareSound(runSound,0.3f, true,null);
+		}
+		if (_moveDirection != 0)
+		{
+			EazySoundManager.GetSoundAudio(runSoundId).Play();
 		}
 		else
 		{
-			_facingRight = false;
+			EazySoundManager.GetSoundAudio(runSoundId).Stop();
 		}
 	}
 
 	public void OnJump (InputAction.CallbackContext a_context)
 	{
+		
 		if (a_context.ReadValue<float>() >=1)
 		{
 			_isJumpPressed = true;
@@ -101,25 +119,25 @@ public class CharacterController2D : MonoBehaviour
 		
 		if (collision.tag == "DamageObjet")
 		{
-			Level.Instance.heats--;
-			if(Level.Instance.heats < 0)
+			EazySoundManager.PlaySound(damageSound);
+			LevelManager.Instance._currentLevel.heats--;
+			if(LevelManager.Instance._currentLevel.heats < 0)
 			{
-				Level.Instance.heats = 0;
+				LevelManager.Instance._currentLevel.heats = 0;
 			}
-			Debug.Log(collision.tag);
 			_damagedSprite.SetActive(true);
 			_normalSprite.SetActive(false);
 		}
 		else if (collision.tag == "BonusObject")
 		{
-			Level.Instance.CollectedLeafs++;
+			EazySoundManager.PlaySound(colectSound);
+			LevelManager.Instance._currentLevel.CollectedLeafs++;
 			collision.gameObject.SetActive(false);
 		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		Debug.Log(collision.tag);
 		if (collision.tag == "DamageObjet")
 		{
 			_damagedSprite.SetActive(false);

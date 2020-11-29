@@ -76,7 +76,7 @@ namespace Hellmade.Sound
             }
         }
 
-        private void Awake()
+        static EazySoundManager()
         {
             Instance.Init();
         }
